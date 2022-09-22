@@ -1,0 +1,375 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+.mobile {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+#menu-logo {
+  height: 100px;
+  width: 150px;
+  display: none;
+}
+
+.mobile-menu {
+  height: 105vh;
+  top: -1px;
+  position: fixed;
+  right: -2px;
+  left: 0;
+  z-index: 3;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  transition: top 1s ease;
+  padding-left: 80px;
+  display: none;
+  background: #6070ffe6;
+  backdrop-filter: blur(4px);
+}
+
+nav ul {
+  justify-content: space-between;
+  list-style: none;
+  display: none;
+}
+
+.mobile-menu ul {
+  flex-direction: column;
+  justify-content: center;
+  transition: top 1s ease;
+  background: #6070ffe6;
+  backdrop-filter: blur(4px);
+  padding-right: 10px;
+}
+
+nav ul li {
+  margin-right: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.mobile-menu ul li {
+  list-style: none;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+nav ul li:last-child {
+  border: 2px solid red;
+  padding: 3px 5px 3px 5px;
+}
+
+.mobile-menu ul li a {
+  text-decoration: none;
+  color: rgb(119, 29, 29);
+}
+
+.landing-about {
+  max-width: 100%;
+  height: auto;
+  background-image: url("images/about-bac.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro {
+  font: 1.1em sans-serif;
+  background-color: #fafafb;
+  border: 4px solid #dedede;
+  width: 75%;
+}
+
+.landing-about h1 {
+  width: 100%;
+  font-size: 50px;
+  color: rgba(255, 0, 0, 071);
+  font-weight: bolder;
+  font-weight: 900;
+  text-transform: uppercase;
+  background-color: rgb(139, 39, 39);
+  background-image: url(./images/board.png);
+  background-repeat: repeat;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#contact a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  display: block;
+  margin-top: 10px;
+}
+
+.further-details {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.further-details h2 {
+  font-size: 1em;
+}
+
+.liner {
+  background-color: red;
+  width: 90px;
+  height: 4px;
+  margin-bottom: 4%;
+}
+
+footer p {
+  padding-right: 20px;
+  text-align: center;
+}
+
+.further-details p {
+  font-weight: bolder;
+  margin-bottom: 6%;
+  width: 90%;
+}
+
+.logo {
+  border: 2px solid black;
+}
+
+.summits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5e5;
+  margin-top: 6%;
+  max-width: 100%;
+}
+
+.summits img {
+  width: 70%;
+  height: 60%;
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: black;
+  height: 200px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 150px;
+  height: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  #menu-logo {
+    display: block;
+    height: 100px;
+    width: 150px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin-right: 24px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  nav ul li:last-child {
+    border: 2px solid red;
+    padding: 3px 5px 3px 5px;
+  }
+
+  #burger {
+    display: none;
+  }
+
+  .mobile {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .landing-about {
+    max-width: 100%;
+    height: auto;
+    background-image: url("images/about-bac.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #intro {
+    font: 1.1em sans-serif;
+    background-color: #fafafb;
+    border: 4px solid #dedede;
+    width: 75%;
+    padding: 10px 30px 10px 30px;
+  }
+
+  .landing-about h1 {
+    font-size: 50px;
+  }
+
+  .landing-about h2 {
+    width: 100%;
+    font-size: 50px;
+    color: rgba(255, 0, 0, 071);
+    font-weight: bolder;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: rgb(139, 39, 39);
+    background-image: url(./images/it.jpeg);
+    background-repeat: repeat;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  #contact {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  #contact a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .further-details {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .further-details h2 {
+    font-size: 1em;
+  }
+
+  .liner {
+    background-color: red;
+    width: 90px;
+    height: 4px;
+    margin-bottom: 4%;
+  }
+
+  footer p {
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .further-details p {
+    font-weight: bolder;
+    margin-bottom: 6%;
+    width: 90%;
+    font-size: large;
+  }
+
+  .logo {
+    border: 2px solid black;
+  }
+
+  .summits {
+    background-color: #e5e5e5;
+    margin-top: 6%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .summit-image {
+    display: flex;
+    width: 80%;
+    height: 50%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .summit-image img {
+    width: 45%;
+    height: 100%;
+  }
+
+  footer {
+    background-color: black;
+    height: 200px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .mobile-menu,
+  .noMenu {
+    display: none;
+  }
+}
