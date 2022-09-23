@@ -84,7 +84,7 @@ body {
 
 #logo {
   display: none;
-  position: absolute;
+  position: inherit;
   margin-left: 12%;
   zoom: 65%;
 }
@@ -105,7 +105,7 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   height: 10%;
   justify-content: space-around;
   background-color: #e5e5e5;
@@ -378,6 +378,11 @@ footer {
     color: #272a31;
   }
 
+  .programs {
+    display: flex;
+    justify-content: center;
+  }
+
   .program .program-title {
     align-items: center;
     justify-content: center;
@@ -404,7 +409,7 @@ footer {
 
   #logo {
     display: flex;
-    position: absolute;
+    position: inherit;
     margin-left: 12%;
     zoom: 65%;
   }
@@ -431,7 +436,7 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: row;
-    width: 100%;
+    width: 100vw;
     height: 10%;
     justify-content: space-around;
     background-color: #e5e5e5;
@@ -439,7 +444,6 @@ footer {
 
   .cards {
     margin: 0;
-    gap: 0.2rem;
   }
 
   .lead {
@@ -472,8 +476,7 @@ footer {
   }
 
   .btm-nav {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
   }
 
   #landing-p {

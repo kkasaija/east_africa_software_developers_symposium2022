@@ -151,7 +151,7 @@ body {
 .footer-logo {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 10%;
   flex-direction: column;
   margin-top: 20px;
@@ -223,8 +223,8 @@ body {
 
 .cards .card .prev {
   justify-content: center;
-  width: 30em;
-  height: 20em;
+  width: 50vw;
+  height: 35vh;
 }
 
 .cards .card h5 {
@@ -328,7 +328,7 @@ body {
 
   #logo {
     display: flex;
-    position: absolute;
+    position: inherit;
     margin-left: 12%;
     zoom: 65%;
   }
@@ -336,8 +336,9 @@ body {
   .footer-logo {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 10%;
+    margin-right: 0;
     flex-direction: row;
     margin-top: 6%;
     justify-content: space-around;
@@ -394,7 +395,7 @@ body {
   .cards .card .prev {
     justify-content: center;
     width: 30vw;
-    height: 40vh;
+    height: 35vh;
   }
 
   .cards .card h5 {
