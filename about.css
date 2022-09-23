@@ -1,375 +1,340 @@
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 100%;
-}
-
-.mobile {
-  max-width: 100%;
-  height: auto;
-  text-align: center;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 30px;
-  margin-top: 10px;
-  align-items: center;
-}
-
-#menu-logo {
-  height: 100px;
-  width: 150px;
-  display: none;
-}
-
-.mobile-menu {
-  height: 105vh;
-  top: -1px;
-  position: fixed;
-  right: -2px;
-  left: 0;
-  z-index: 3;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  transition: top 1s ease;
-  padding-left: 80px;
-  display: none;
-  background: #6070ffe6;
-  backdrop-filter: blur(4px);
-}
-
-nav ul {
-  justify-content: space-between;
-  list-style: none;
-  display: none;
-}
-
-.mobile-menu ul {
-  flex-direction: column;
-  justify-content: center;
-  transition: top 1s ease;
-  background: #6070ffe6;
-  backdrop-filter: blur(4px);
-  padding-right: 10px;
-}
-
-nav ul li {
-  margin-right: 30px;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-nav ul li a {
-  color: black;
-  text-decoration: none;
-}
-
-.mobile-menu ul li {
-  list-style: none;
-  font-size: 30px;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-
-nav ul li:last-child {
-  border: 2px solid red;
-  padding: 3px 5px 3px 5px;
-}
-
-.mobile-menu ul li a {
-  text-decoration: none;
-  color: rgb(119, 29, 29);
-}
-
-.landing-about {
-  max-width: 100%;
-  height: auto;
-  background-image: url("images/about-bac.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#intro {
-  font: 1.1em sans-serif;
-  background-color: #fafafb;
-  border: 4px solid #dedede;
-  width: 75%;
-}
-
-.landing-about h1 {
-  width: 100%;
-  font-size: 50px;
-  color: rgba(255, 0, 0, 071);
-  font-weight: bolder;
-  font-weight: 900;
-  text-transform: uppercase;
-  background-color: rgb(139, 39, 39);
-  background-image: url(./images/board.png);
-  background-repeat: repeat;
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#contact a {
-  text-decoration: none;
-  color: black;
-  font-weight: bolder;
-  display: block;
-  margin-top: 10px;
-}
-
-.further-details {
-  display: flex;
-  max-width: 100%;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-  text-align: center;
-}
-
-.further-details h2 {
-  font-size: 1em;
-}
-
-.liner {
-  background-color: red;
-  width: 90px;
-  height: 4px;
-  margin-bottom: 4%;
-}
-
-footer p {
-  padding-right: 20px;
-  text-align: center;
-}
-
-.further-details p {
-  font-weight: bolder;
-  margin-bottom: 6%;
-  width: 90%;
-}
-
-.logo {
-  border: 2px solid black;
-}
-
-.summits {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #e5e5e5;
-  margin-top: 6%;
-  max-width: 100%;
-}
-
-.summits img {
-  width: 70%;
-  height: 60%;
-  margin-bottom: 30px;
-}
-
-footer {
-  background-color: black;
-  height: 200px;
-  width: 100%;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-logo img {
-  width: 150px;
-  height: 150px;
-}
-
-@media screen and (min-width: 768px) {
-  #menu-logo {
-    display: block;
-    height: 100px;
-    width: 150px;
+ body {
+    margin: 0%;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
   }
 
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+  .top-nav .nav-item .nav-link {
+    color: #fff;
+  }
+  
+  .top-nav {
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 10px;
   }
 
-  nav ul li {
-    margin-right: 24px;
-    font-size: 20px;
-    font-weight: 600;
+  #navbarNav {
+    padding-right: 3%;
+    width: 60px;
   }
 
-  nav ul li a {
-    text-decoration: none;
-    color: black;
+  .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
-  nav ul li:last-child {
-    border: 2px solid red;
-    padding: 3px 5px 3px 5px;
-  }
-
-  #burger {
-    display: none;
-  }
-
-  .mobile {
-    max-width: 100%;
-    height: auto;
-    text-align: center;
-  }
-
-  .landing-about {
-    max-width: 100%;
-    height: auto;
-    background-image: url("images/about-bac.png");
-    background-size: cover;
+  #landing-p {
+    background-image: url(./images/about-bg.png);
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-size: cover;
   }
 
-  #intro {
-    font: 1.1em sans-serif;
-    background-color: #fafafb;
-    border: 4px solid #dedede;
-    width: 75%;
-    padding: 10px 30px 10px 30px;
-  }
-
-  .landing-about h1 {
-    font-size: 50px;
-  }
-
-  .landing-about h2 {
-    width: 100%;
-    font-size: 50px;
-    color: rgba(255, 0, 0, 071);
+  #landing-p h2 {
+    width: auto;
+    font-size: 3vw;
+    color: #ec5242;
     font-weight: bolder;
     font-weight: 900;
     text-transform: uppercase;
-    background-color: rgb(139, 39, 39);
-    background-image: url(./images/it.jpeg);
+    background-color: #ec5242;
+    background-image: url(./images/board.png);
     background-repeat: repeat;
     background-clip: border-box;
+    background-size: auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  #intro {
+    font-family: "Lato", sans-serif;
+    font: 1em sans-serif;
+    background-color: #fff;
+    border: 2px solid #dedede;
+    padding: 10px 20px 10px 20px;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
   }
 
   #contact {
-    padding-right: 20px;
-    padding-left: 20px;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
   }
 
   #contact a {
-    text-decoration: none;
-    color: black;
-    font-weight: bolder;
-    display: block;
-    margin-top: 10px;
+    font-weight: bold;
   }
 
-  .further-details {
+  .col-4 #line {
+    width: 20vw;
+    color: #ec5242;
+    border: 2px solid #ec5242;
+    opacity: 1;
+    font-size: 1px;
+    margin: auto;
+  }
+
+  #logo {
+    position: absolute;
+    margin-left: 12%;
+    position: inherit;
+    zoom: 65%;
+  }
+
+  .footer-logo {
     display: flex;
-    max-width: 100%;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
-    margin-top: 50px;
-    text-align: center;
-  }
-
-  .further-details h2 {
-    font-size: 1em;
-  }
-
-  .liner {
-    background-color: red;
-    width: 90px;
-    height: 4px;
-    margin-bottom: 4%;
-  }
-
-  footer p {
-    padding-right: 20px;
-    text-align: center;
-  }
-
-  .further-details p {
-    font-weight: bolder;
-    margin-bottom: 6%;
-    width: 90%;
-    font-size: large;
-  }
-
-  .logo {
-    border: 2px solid black;
-  }
-
-  .summits {
-    background-color: #e5e5e5;
-    margin-top: 6%;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .summit-image {
-    display: flex;
-    width: 80%;
-    height: 50%;
-    justify-content: space-between;
-    margin-bottom: 30px;
-  }
-
-  .summit-image img {
-    width: 45%;
-    height: 100%;
-  }
-
-  footer {
-    background-color: black;
-    height: 200px;
     width: 100%;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    height: 10%;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: space-around;
+    background-color: #e5e5e5;
+    background-image: url(./images/progBac.jpeg);
+  }
+
+  .footer-logo p{
+    margin-top: auto;
   }
 
   .footer-logo img {
-    width: 150px;
-    height: 150px;
+    zoom: normal;
   }
 
-  .mobile-menu,
-  .noMenu {
-    display: none;
+  .lead {
+    color: #fff;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+
+  .card .card-body .card-title {
+    color: #ec5242;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-body p {
+    display: flex;
+    justify-content: stretch;
+  }
+
+  .card-img-top {
+    width: 70%;
+    align-self: center;
+  }
+
+  .program .program-title h2 {
+    color: #000;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+  }
+
+  .program .program-title .mt-3 p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8vh;
+  }
+
+  .cards .card img {
+    justify-content: center;
+    width: 30em;
+    height: 7em;
+  }
+
+   .cards .card .prev {
+    justify-content: center;
+    width: 30em;
+    height: 20em;
+  }
+
+  .cards .card h5 {
+    margin-top: -30%;
+    color: #fff;
+    text-align: center;
+  }
+
+@media (min-width: 768px) {
+  body {
+    margin: 0%;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+  }
+
+  .top-nav .nav-item .nav-link {
+    color: #fff;
+  }
+  
+  .top-nav {
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 10px;
+  }
+
+  #navbarNav {
+    padding-right: 3%;
+    width: 60px;
+  }
+
+  .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  #landing-p {
+    background-image: url(./images/about-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #landing-p h2 {
+    width: auto;
+    font-size: 3vw;
+    color: #ec5242;
+    font-weight: bolder;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: #ec5242;
+    background-image: url(./images/board.png);
+    background-repeat: repeat;
+    background-clip: border-box;
+    background-size: auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  #intro {
+    font-family: "Lato", sans-serif;
+    font: 1em sans-serif;
+    background-color: #fff;
+    border: 2px solid #dedede;
+    padding: 10px 20px 10px 20px;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+  }
+
+  #contact {
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+  }
+
+  #contact a {
+    font-weight: bold;
+  }
+
+  .col-4 #line {
+    width: 20vw;
+    color: #ec5242;
+    border: 2px solid #ec5242;
+    opacity: 1;
+    font-size: 1px;
+    margin: auto;
+  }
+
+  #logo {
+    position: absolute;
+    margin-left: 12%;
+    position: inherit;
+    zoom: 65%;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    flex-direction: row;
+    margin-top: 6%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #e5e5e5;
+    background-image: url(./images/progBac.jpeg);
+  }
+
+  .footer-logo img {
+    zoom: normal;
+  }
+
+  .lead {
+    color: #fff;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+
+  .card .card-body .card-title {
+    color: #ec5242;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-body p {
+    display: flex;
+    justify-content: stretch;
+  }
+
+  .card-img-top {
+    width: 70%;
+    align-self: center;
+  }
+
+  .program .program-title h2 {
+    color: #000;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+  }
+
+  .program .program-title .mt-3 p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .cards {
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vh;
+  }
+
+  .cards .card .prev {
+    justify-content: center;
+    width: 30vw;
+    height: 40vh;
+  }
+
+  .cards .card h5 {
+    margin-top: -30%;
+    color: #fff;
+    text-align: center;
   }
 }
