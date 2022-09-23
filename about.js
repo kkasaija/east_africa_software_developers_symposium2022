@@ -1,17 +1,21 @@
-/* eslint-disable no-unused-vars */
-const showMenu = document.querySelector('#burger');
-const hideMenu = document.querySelector('#hideMenu');
-const popup = document.querySelector('.mobileMenu');
+const mobileNav = document.querySelectorSelector('.mobileMenu');
+const body = document.getElementsByTagName('body')[0];
+const hamburgerClose = document.getElementById('hideMenu');
+const hamburgerOpen = document.getElementById('mmm');
+const hamburgerListenItem = document.querySelectorAll('link1');
 
 function openMenu() {
-  popup.style.display = 'flex';
+  mobileNav.style.visibility = 'visible';
+  body.style.overflow = 'hidden';
 }
+
 function closeMenu() {
-  popup.style.top = '-100%';
-  popup.style.width = '50%';
-  window.setTimeout(() => {
-    window.location.reload();
-  }, 50);
+  mobileNav.style.visibility = 'hidden';
+  body.style.overflow = 'auto';
 }
-showMenu.addEventListener('click', openMenu);
-hideMenu.addEventListener('click', closeMenu);
+
+hamburgerClose.addEventListener('click', closeMenu);
+hamburgerOpen.addEventListener('click', openMenu);
+hamburgerListenItem.forEach((element) => {
+  element.addEventListener('click', closeMenu);
+});

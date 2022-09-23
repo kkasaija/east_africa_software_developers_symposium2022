@@ -68,21 +68,38 @@
     font-weight: bold;
   }
 
+  .faIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  cursor: pointer;
+}
+
   .mobileMenu {
+  visibility: hidden;
   height: 105vh;
   top: -1px;
   position: fixed;
-  left: 0%;
   z-index: 3;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   align-items: center;
   transition:ease;
-  padding-left: 80px;
   background: #6070ffe6;
   backdrop-filter: blur(4px);
   width: 100%;
+  padding-left: 0;
+}
+
+#popup .nav-item a {
+  color: #fff;
+  font-size: 24px;
+}
+
+#popup {
+  align-items: center;
 }
 
   .mobileMenu ul li a {
@@ -107,13 +124,13 @@
     margin: auto;
   }
 
-  /* #logo {
-    visibility: hidden;
+   #logo {
+    display: none;
     position: absolute;
     margin-left: 12%;
     position: inherit;
     zoom: 65%;
-  } */
+  }
 
   .footer-logo {
     display: flex;
@@ -152,6 +169,11 @@
     align-self: center;
     align-items: center;
     justify-content: center;
+  }
+
+  .navbar .container-fluid {
+    justify-content: flex-start;
+    margin: 0;
   }
 
   .card-body p {
@@ -209,6 +231,12 @@
     font-family: "Lato", sans-serif;
     font-weight: 300;
   }
+
+#burger {
+  display: none;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
 
   .mobileMenu {
     visibility: hidden;
@@ -288,7 +316,7 @@
   }
 
   #logo {
-    visibility: visible;
+    display: flex;
     position: absolute;
     margin-left: 12%;
     position: inherit;

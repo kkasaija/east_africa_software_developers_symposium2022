@@ -15,6 +15,14 @@ body {
   justify-content: center;
 }
 
+.faIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  cursor: pointer;
+}
+
 .program-title .col #line {
   width: 10vw;
   color: #ec5242;
@@ -29,24 +37,42 @@ body {
   line-height: 10px;
 }
 
-.mobileMenu {
+  .mobileMenu {
   height: 105vh;
-  top: -1px;
   position: fixed;
-  right: -2px;
-  left: 0;
+  left: 0%;
   z-index: 3;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  align-items: center;
   transition:ease;
-  padding-left: 80px;
   background: #6070ffe6;
   backdrop-filter: blur(4px);
+  width: 100%;
 }
+
+ .mobileMenu ul li a {
+    color: #fff;
+    border: none;
+  }
+
+  .mobileMenu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
 
 #popup .nav-item a {
   color: #fff;
+  font-size: 24px;
+}
+
+#popup {
+  align-items: center;
 }
 
 #navbarNav {
@@ -54,13 +80,18 @@ body {
   width: 60px;
 }
 
-/* #logo {
+.navbar .container-fluid {
+  justify-content: flex-start;
+  margin: 0;
+}
+
+#logo {
   display: none;
   position: absolute;
   margin-left: 12%;
   position: inherit;
   zoom: 65%;
-} */
+}
 
 footer {
   display: flex;
@@ -133,11 +164,6 @@ footer {
 
 .cards {
   justify-content: center;
-}
-
-.btm-nav {
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 .logo1 {
@@ -269,10 +295,6 @@ footer {
   }
 
   /*---------------speakers end------------------------------------*/
-footer #hidden {
-  visibility: hidden;
-}
-
 #landing-p h3 {
   color: black;
   font-size: 25px;
@@ -292,6 +314,12 @@ footer #hidden {
     font-family: "Lato", sans-serif;
     font-weight: 300;
   }
+
+  #burger {
+  display: none;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
 
   .top-nav .nav-item .nav-link {
     color: #fff;
@@ -381,7 +409,7 @@ footer #hidden {
   }
 
   #logo {
-    visibility: visible;
+    display: flex;
     position: absolute;
     margin-left: 12%;
     position: inherit;
