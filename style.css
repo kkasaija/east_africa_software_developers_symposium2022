@@ -29,17 +29,38 @@ body {
   line-height: 10px;
 }
 
+.mobileMenu {
+  height: 105vh;
+  top: -1px;
+  position: fixed;
+  right: -2px;
+  left: 0;
+  z-index: 3;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  transition:ease;
+  padding-left: 80px;
+  background: #6070ffe6;
+  backdrop-filter: blur(4px);
+}
+
+#popup .nav-item a {
+  color: #fff;
+}
+
 #navbarNav {
   padding-right: 3%;
   width: 60px;
 }
 
-#logo {
+/* #logo {
+  display: none;
   position: absolute;
   margin-left: 12%;
   position: inherit;
   zoom: 65%;
-}
+} */
 
 footer {
   display: flex;
@@ -125,11 +146,10 @@ footer {
   width: auto;
 }
 
-.logo1 .col img {
-  width: 120%;
-  height: 120%;
-  object-fit: cover;
-  align-self: center;
+.logo1 .col-md-auto img {
+  width: 10em;
+  height: 10em;
+  object-fit: fill;
 }
 
 #landing-p {
@@ -194,6 +214,64 @@ footer {
   border: 4px solid #dedede;
   padding: 10px 10px 10px 10px;
 }
+/*speakers-------------start-------------------------------------*/
+  #myspeakers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+
+   
+  }
+
+  #myspeakers .card {
+    justify-content: flex-start;
+    margin: 1em;
+    width: 60vw;
+    background-color: transparent;
+    border-style: none;
+    flex-direction: row;
+  }
+
+  #myspeakers .card .speaker-details .avator img {
+    width: 18vw;
+    height: 20vh;
+    object-fit: cover;
+  }
+
+  #myspeakers .card .speaker-details {
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+  }
+
+  #myspeakers .card .speaker-details .personal-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: auto; 
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  #myspeakers .card .speaker-details .personal-details h4 {
+    color: #272a31;
+    font-weight: bold;
+  }
+
+  #myspeakers .card .speaker-details .personal-details .role {
+    color: #ec5242;
+  }
+
+  #myspeakers .card .speaker-details .personal-details .current-role {
+    color: #272a31;
+  }
+
+  /*---------------speakers end------------------------------------*/
+footer #hidden {
+  visibility: hidden;
+}
 
 #landing-p h3 {
   color: black;
@@ -218,6 +296,65 @@ footer {
   .top-nav .nav-item .nav-link {
     color: #fff;
   }
+
+  /*speakers-------------start-------------------------------------*/
+  #myspeakers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+
+   
+  }
+
+  #myspeakers .card {
+    justify-content: flex-start;
+    margin: 1em;
+    width: 45%;
+    background-color: transparent;
+    border-style: none;
+    flex-direction: row;
+  }
+
+  #myspeakers .card .speaker-details .avator img {
+    width: 20vw;
+    height: 33vh;
+    object-fit: cover;
+  }
+
+  .mobileMenu {
+    visibility: hidden;
+  }
+
+  #myspeakers .card .speaker-details {
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+  }
+
+  #myspeakers .card .speaker-details .personal-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: auto; 
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  #myspeakers .card .speaker-details .personal-details h4 {
+    color: #272a31;
+    font-weight: bold;
+  }
+
+  #myspeakers .card .speaker-details .personal-details .role {
+    color: #ec5242;
+  }
+
+  #myspeakers .card .speaker-details .personal-details .current-role {
+    color: #272a31;
+  }
+
+  /*---------------speakers end------------------------------------*/
 
   .program .program-title {
     align-items: center;
@@ -244,6 +381,7 @@ footer {
   }
 
   #logo {
+    visibility: visible;
     position: absolute;
     margin-left: 12%;
     position: inherit;

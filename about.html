@@ -20,9 +20,6 @@
     <header class="fixed-top">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark top-nav">
         <div class="container-fluid">
-          <!-- <button class="navbar-toggler bg-toggle1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <div class="ms-auto"></div>-
             <ul class="navbar-nav">
@@ -39,21 +36,35 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-white btm-nav">
         <div class="container-fluid" id="mobile-view">
           <a class="navbar-brand" href="#"><img id="logo" src="./images/logo.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" id="burger" data-bs-toggle="collapse"aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <div class="ms-auto"></div>
             <ul class="navbar-nav">
               <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link active" href="#">Program</a></li>
-              <li class="nav-item"><a class="nav-link active" href="#">Developers</a></li>
-              <li class="nav-item"><a class="nav-link active" href="#">Sponsors</a></li>
+              <li class="nav-item"><a class="nav-link active" href="program">Program</a></li>
+              <li class="nav-item"><a class="nav-link active" href="speakers">Developers</a></li>
+              <li class="nav-item"><a class="nav-link active" href="partners">Sponsors</a></li>
               <li class="nav-item border border-3 border-danger"><a class="nav-link" href="#">CB Campain</a></li>
             </ul>
           </div>
         </div>
       </nav>
+          <!----------popup------------------>
+
+      <div class="mobileMenu">
+        <div class="faIcon"><i class="fas fa-times fa-2x" id="hideMenu"></i></div>
+        <ul class="navbar-nav" id="popup">
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="program">Program</a></li>
+          <li class="nav-item"><a class="nav-link active" href="speakers">Speakers</a></li>
+          <li class="nav-item"><a class="nav-link active" href="partners">Sponsors</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">CB Campain</a></li>
+        </ul>
+      </div>
+        
+      <!------End popup------------------>
     </header>
     <main>
       <section id="landing-p">

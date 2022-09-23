@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 const showMenu = document.querySelector('#burger');
 const hideMenu = document.querySelector('#hideMenu');
-const popup = document.querySelector('.mobile-menu');
+const popup = document.querySelector('.mobileMenu');
 
 function openMenu() {
   popup.style.display = 'flex';
