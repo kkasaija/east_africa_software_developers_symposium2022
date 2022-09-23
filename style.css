@@ -38,6 +38,7 @@ body {
 }
 
   .mobileMenu {
+  visibility: hidden;
   height: 105vh;
   position: fixed;
   left: 0%;
@@ -321,6 +322,10 @@ footer {
   align-self: flex-start;
 }
 
+.noMenu {
+  display: none;
+}
+
   .top-nav .nav-item .nav-link {
     color: #fff;
   }
@@ -348,10 +353,6 @@ footer {
     width: 20vw;
     height: 33vh;
     object-fit: cover;
-  }
-
-  .mobileMenu {
-    visibility: hidden;
   }
 
   #myspeakers .card .speaker-details {

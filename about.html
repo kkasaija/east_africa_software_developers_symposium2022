@@ -36,8 +36,9 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-white btm-nav">
         <div class="container-fluid" id="mobile-view">
           <a class="navbar-brand" href="#"><img id="logo" src="./images/logo.png" alt=""></a>
-          <button class="navbar-toggler" type="button" id="burger" data-bs-toggle="collapse"aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" id="mmm"></span>
+
+          <button class="navbar-toggler" type="button" aria-controls="navbarNav" id="burger">
+              <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <div class="ms-auto"></div>
@@ -54,16 +55,16 @@
 
       <!----------popup------------------>
 
-      <div class="mobileMenu">
-        <div class="faIcon"><i class="fas fa-times fa-2x" id="hideMenu"></i></div>
-        <ul class="navbar-nav" id="popup">
-          <li class="nav-item"><a class="nav-link active link1" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active link1" href="program">Program</a></li>
-          <li class="nav-item"><a class="nav-link active link1" href="speakers">Speakers</a></li>
-          <li class="nav-item"><a class="nav-link active link1" href="partners">Sponsors</a></li>
-          <li class="nav-item"><a class="nav-link active link1" href="#">CB Campain</a></li>
-        </ul>
-      </div>
+   <div class="mobileMenu">
+      <div class="faIcon"><i class="fas fa-times fa-2x" id="hideMenu"></i><br/></div>
+      <ul>
+        <li class="nav-item"><a class="linker nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="linker nav-link active" href="#program">Program</a></li>
+        <li class="nav-item"><a class="linker nav-link active" href="#speakers">Developers</a></li>
+        <li class="nav-item"><a class="linker nav-link active" href="#partners">Sponsor</a></li>
+        <li class="nav-item"><a class="linker nav-link active" href="">CN Campaign</a></li>
+      </ul>
+    </div>
         
       <!------End popup------------------>
     </header>
@@ -152,16 +153,15 @@
         </div>
         </section>
       </section>
-    </main>
-    <footer class="container-fluid">
-      <div class="footer-logo container-fluid p-2 mx-auto lead text-dark">
-        <a href="index.html"> <img src="images/logo.png" alt="Standard-oil"></a> 
-        <p class="lead">
-          East African software developers' symposium.All
-          rights reserved.
-        </p> 
-      </div>
-    </footer>
+      <footer class="container-fluid">
+        <div class="footer-logo container-fluid p-2 mx-auto lead text-dark">
+          <a href="index.html"> <img src="images/logo.png" alt="Standard-oil"></a> 
+          <p class="lead">
+            East African software developers' symposium.All
+            rights reserved.
+          </p> 
+        </div>
+      </footer>
     </main>
     <script src="about.js"></script>
   </body>
