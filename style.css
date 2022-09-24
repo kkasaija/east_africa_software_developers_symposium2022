@@ -126,7 +126,6 @@ footer {
 
 .cards {
   margin: 0;
-  gap: 3rem;
 }
 
 .lead {
@@ -146,7 +145,6 @@ footer {
   align-self: center;
   align-items: center;
   justify-content: flex-start;
-  gap: 4em;
 }
 
 .card-body p {
@@ -383,6 +381,10 @@ footer {
     justify-content: center;
   }
 
+  .programs .col-md-2 {
+    width: 15%;
+  }
+
   .program .program-title {
     align-items: center;
     justify-content: center;
@@ -446,6 +448,10 @@ footer {
     margin: 0;
   }
 
+  .card-text {
+    text-align: center;
+  }
+
   .lead {
     color: #fff;
     text-align: center;
@@ -463,7 +469,6 @@ footer {
     align-self: center;
     align-items: center;
     justify-content: flex-start;
-    gap: 4em;
   }
 
   .card-body p {
