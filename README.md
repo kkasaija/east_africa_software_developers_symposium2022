@@ -47,7 +47,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Link to online Demo
 
-- [Online Demo](https://kasaija-kenneth.github.io/)
+- [Online Demo](https://kasaija-kenneth.github.io/east_africa_software_developers_symposium2022/)
 
 ## Live Loom link
 - [Loom overview video link](https://www.loom.com/share/b5b6f290eb474ccf8c31963a4e6046f3)
