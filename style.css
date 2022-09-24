@@ -22,7 +22,7 @@ body {
 }
 
 .program-title .col #line {
-  width: 10vw;
+  width: 4vw;
   color: #ec5242;
   border: 2px solid #ec5242;
   opacity: 1;
@@ -129,9 +129,9 @@ footer {
 }
 
 .lead {
-  color: #fff;
+  color: #272a31;
   text-align: center;
-  font-weight: bolder;
+  font-weight: bold;
   font-size: 25px;
 }
 
@@ -145,6 +145,7 @@ footer {
   align-self: center;
   align-items: center;
   justify-content: flex-start;
+  margin: 0.05%;
 }
 
 .card-body p {
@@ -187,6 +188,7 @@ footer {
 .program .program-title h3 {
   color: #fff;
   font-size: 25px;
+  width: max-content;
   font-weight: 900;
   font-family: "Lato", sans-serif;
 }
@@ -215,6 +217,10 @@ footer {
 
 #landing-p h1 {
   color: #ec5242;
+}
+
+.d-grid {
+  justify-items: center;
 }
 
 #landing-p h3 {
@@ -376,6 +382,10 @@ footer {
     color: #272a31;
   }
 
+  .d-grid {
+    justify-items: center;
+  }
+
   .programs {
     display: flex;
     justify-content: center;
@@ -383,6 +393,7 @@ footer {
 
   .programs .col-md-2 {
     width: 15%;
+    margin: 0.15%;
   }
 
   .program .program-title {
@@ -391,7 +402,7 @@ footer {
   }
 
   .program-title .col #line {
-    width: 10vw;
+    width: 4vw;
     color: #ec5242;
     border: 2px solid #ec5242;
     opacity: 1;
@@ -453,9 +464,9 @@ footer {
   }
 
   .lead {
-    color: #fff;
+    color: #272a31;
     text-align: center;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 25px;
   }
 
