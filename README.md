@@ -12,7 +12,7 @@
 
 - HTML
 - CSS
-- Flexbox
+- Bootsrap
 - Javascript
 
 ## Getting Started
@@ -22,7 +22,7 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 - Code editor (preferably VSCode)
-- HTML and CSS Linters
+- HTML, CSS and Javascript Linters
   \_ Project Template
 
 ### Setup
@@ -47,15 +47,16 @@ To get a local copy up and running follow these simple example steps.
 
 ### Link to online Demo
 
-- https://kasaija-kenneth.github.io/
+- [Online Demo](https://kasaija-kenneth.github.io/)
 
 ## Live Loom link
+- [Loom overview video link](https://www.loom.com/share/b5b6f290eb474ccf8c31963a4e6046f3)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Kasaija-Kenneth/east_africa_software_developers_symposium2022/issues/2).
 
 ## Show your support
 
